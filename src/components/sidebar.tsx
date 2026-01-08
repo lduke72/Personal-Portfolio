@@ -66,7 +66,7 @@ export default function Sidebar() {
     <aside className="fixed left-0 top-0 h-screen w-64 bg-gray-100 px-6 py-10">
       {/* Header */}
       <div className="flex items-center gap-3">
-        <img src="/headshot.ico" alt="Lana's headshot" className="h-10 w-10 rounded-full" />
+        <img src="/Headshot.ico" alt="Lana's headshot" className="h-10 w-10 rounded-full" />
         <div className="flex-1">
           <div className="text-lg font-semibold leading-tight">Lana</div>
           <div className="text-sm text-zinc-500 flex items-center h-5">
