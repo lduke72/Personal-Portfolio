@@ -13,14 +13,14 @@ const skills = [
 const carouselImages = [
   { src: "/meinspain.jpg", alt: "Me in Spain" },
   { src: "/meandbuzz.JPEG", alt: "Me and Buzz" },
-  { src: "/friends1.jpg", alt: "Friends 1" },
-  { src: "/sagradafamilia.jpg", alt: "Me and friend at Sagrada Familia" },
+  { src: "/friends1.JPG", alt: "Friends 1" },
+  { src: "/sagradafamilia.JPG", alt: "Me and friend at Sagrada Familia" },
   { src: "/friends3.jpg", alt: "Friends 3" },
   { src: "/gtbasketball.jpg", alt: "GT Basketball" },
   { src: "/meoncruise.jpg", alt: "Me on Cruise" },
   { src: "/venice.jpg", alt: "Me in Venice" },
-  { src: "/princeton1.jpg", alt: "Friends" },
-  { src: "/stonemountain.jpg", alt: "Me in Car" },
+  { src: "/princeton1.JPG", alt: "Friends at Princeton" },
+  { src: "/stonemountain.JPG", alt: "Stone Mountain" },
 ];
 
 export default function AboutPage() {
