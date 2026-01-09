@@ -100,26 +100,8 @@ export default function HomePage() {
       ))}
 
       <div className="mx-auto max-w-3xl px-6 md:-translate-x-8">
-        {/* Main heading with photo on right */}
-        {/* Commented out headshot - can restore later
-        <div className="md:float-right md:ml-6 md:mb-4 flex justify-center md:justify-end mb-6 md:mb-0">
-          <div 
-            className="profile-image w-48 h-48 md:w-64 md:h-64"
-            style={{
-              backgroundImage: 'url(/Headshot.ico)',
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'center',
-              backgroundSize: 'cover',
-              boxShadow: 'inset 0 0 0 9px rgb(255 255 255 / 30%)',
-              borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%',
-              animation: 'profile__animate 8s ease-in-out infinite'
-            }}
-          />
-        </div>
-        */}
-        
-        {/* Tech Tower grad photo on right */}
-        <div className="md:float-right md:-ml-24 md:mb-4 flex justify-center md:justify-end mb-6 md:mb-0 translate-x-32">
+        {/* Tech Tower grad photo - centered on mobile, floated right on desktop */}
+        <div className="mb-6 flex justify-center md:float-right md:-ml-24 md:mb-4 md:justify-end md:translate-x-32">
           <img 
             src="/techtower-grad.jpg" 
             alt="Georgia Tech Tech Tower Graduation"

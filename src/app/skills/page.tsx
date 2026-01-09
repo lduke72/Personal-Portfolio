@@ -263,27 +263,27 @@ function SkillCard({ skill }: { skill: Skill }) {
           transform: transform
         }}
       >
-        <div className="flex cursor-pointer flex-row items-center justify-start space-y-2 p-2 sm:p-3 rounded-md gap-3 border border-gray-300 hover:border-gray-100 dark:border-gray-800 dark:hover:border-white dark:hover:bg-gray-700 hover:bg-gray-100 dark:hover:bg-charleston">
+        <div className="flex cursor-pointer flex-row items-center justify-start p-2 sm:p-3 rounded-md gap-2 sm:gap-3 border border-gray-300 hover:border-gray-100 dark:border-gray-800 dark:hover:border-white dark:hover:bg-gray-700 hover:bg-gray-100 dark:hover:bg-charleston min-h-[80px] sm:min-h-0">
           {/* Icon */}
           {imageLoaded ? (
             <img
-              className="w-8 h-8 sm:w-12 sm:h-12 rounded-md object-cover"
+              className="w-8 h-8 sm:w-12 sm:h-12 rounded-md object-cover flex-shrink-0"
               src={getImagePath()}
               alt={skill.name}
               onError={() => setImageLoaded(false)}
             />
           ) : (
-            <div className={`w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center text-2xl ${skill.color} rounded-md`}>
+            <div className={`w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center text-2xl ${skill.color} rounded-md flex-shrink-0`}>
               {skill.icon}
             </div>
           )}
 
           {/* Text */}
-          <div>
-            <h1 className="text-md text-gray-900 dark:text-white sm:text-lg">
+          <div className="flex-1 min-w-0">
+            <h1 className="text-xs sm:text-md md:text-lg text-gray-900 dark:text-white leading-tight break-words">
               {skill.name}
             </h1>
-            <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+            <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 leading-tight">
               {skill.category}
             </p>
           </div>
@@ -307,7 +307,7 @@ export default function SkillsPage() {
       </div>
 
       {/* Skills Grid */}
-      <div className="text-sm pt-6 grid grid-cols-3 gap-4 sm:gap-6 md:gap-4">
+      <div className="text-sm pt-6 grid grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 md:gap-4">
         {skills.map((skill) => (
           <SkillCard key={skill.name} skill={skill} />
         ))}

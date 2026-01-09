@@ -38,7 +38,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="relative h-[calc(100vh-200px)] flex items-center justify-center">
+    <div className="relative min-h-screen pb-20 md:pb-0 md:h-[calc(100vh-200px)] flex items-center justify-center">
       {/* Animated X background - decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {floatingElements.map((element, i) => (
@@ -58,13 +58,13 @@ export default function ContactPage() {
       </div>
 
       {/* Main content */}
-      <div className="mx-auto text-center max-w-3xl px-6 md:mt-8">
-        <h1 className="text-2xl md:text-5xl font-medium text-gray-900 dark:text-white z-20 mt-12 -translate-x-4">
+      <div className="mx-auto text-center max-w-3xl px-6 md:mt-8 w-full">
+        <h1 className="text-2xl md:text-5xl font-medium text-gray-900 dark:text-white z-20 mt-12 md:-translate-x-4">
           Get in Touch! 
         </h1>
 
   
-        <div className="contact__container grid mt-8">
+        <div className="contact__container grid mt-8 relative">
           {/* Contact cards */}
           <div className="contact__content">
             <h3 className="contact__title">Contact Me</h3>
@@ -145,6 +145,18 @@ export default function ContactPage() {
             </div>
           </div>
 
+          {/* "or" divider - only visible on desktop */}
+          <div className="hidden md:block absolute left-1/2 top-64 transform -translate-x-[180%] z-10 pointer-events-none">
+            <h3 className="contact__title text-gray-400"> <strong>or</strong></h3>
+          </div>
+
+          {/* "or" divider for mobile - centered between sections */}
+          <div className="md:hidden my-6 flex items-center justify-center">
+            <div className="flex-1 border-t border-gray-300"></div>
+            <h3 className="px-4 text-gray-400 font-semibold">or</h3>
+            <div className="flex-1 border-t border-gray-300"></div>
+          </div>
+
           {/* Contact form */}
           <div className="contact__content">
             <h3 className="contact__title">Shoot me a message below!</h3>
@@ -207,11 +219,6 @@ export default function ContactPage() {
                 </svg>
               </button>
             </form>
-          </div>
-
-          {/* Centered 'or' */}
-          <div className="absolute left-1/2 top-64 transform -translate-x-[180%] z-10 pointer-events-none">
-            <h3 className="contact__title text-gray-400"> <strong>or</strong></h3>
           </div>
         </div>
       </div>
