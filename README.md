@@ -38,4 +38,4 @@ To run locally:
 npm install
 npm run dev
 ```
-The deployed site can be found at https://lana-duke.vercel.app.
+
