@@ -48,19 +48,21 @@ const projects: Project[] = [
     status: "active",
   },
   {
-    title: "Wayfair AI Agents (Externship)",
+    title: "Wayfair AI Agents (Externship via Extern)",
     description:
-      "Built AI agents in n8n to automate e-commerce product research, including scraping, structuring product data, and identifying trend signals for Wayfair's merchandising, product, and marketing teams. This project was completed as part of the Wayfair AI Externship program through Extern.com.",
+      "Designed and built a multi-agent market intelligence system in n8n to scrape, structure, and analyze competitor product data for automated trend, competitive, and content insights at Wayfair.I developed agents for trend discovery, competitor monitoring, and content generation, integrating Gemini 2.5 with JavaScript-based HTML parsing to extract product attributes, pricing bands, and feature signals from Amazon, Walmart, and Wayfair. Finally, I created a data pipeline using Supabase for persistence and a Google Sheets dashboard to automatically surface validated, structured insights. The system normalized raw web data into JSON to support cross-agent synthesis and reporting. The final product was an auto-updating competitive intelligence dashboard designed to support merchandising, product, and marketing teams. Further improvements include automatic product discovery, recurring reports, and SKU performance integration.",
     image: "/wayfair-project.png",
     // visitLink: "#",
     // githubLink: "#",
     tags: [
+      "Multi-Agent Systems",
       "n8n",
-      "Web Scraping",
-      "LLMs",
+      "LLM Integration (Gemini 2.5)",
+      "JavaScript Web Scraping",
+      "Supabase",
       "Workflow Orchestration",
-      "Automation",
-      "JSON/REST"
+      "Data Pipelines",
+      "Automation"
     ],
     status: "active",
   },
